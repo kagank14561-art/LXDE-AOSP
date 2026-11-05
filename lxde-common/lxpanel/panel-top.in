@@ -1,0 +1,46 @@
+Global {
+    edge=top
+    align=left
+    margin=0
+    widthtype=percent
+    width=100
+    height=30
+    transparent=0
+    tintcolor=#dce8f4
+    alpha=255
+    setdocktype=1
+    setpartialstrut=1
+    usefontcolor=1
+    fontcolor=#1b1b1f
+    background=0
+}
+
+Plugin {
+    type = space
+    expand=1
+    Config {
+        Size=0
+    }
+}
+
+Plugin {
+    type = volume
+    Config {
+        VolumeMuteKey = XF86AudioMute
+        VolumeDownKey = XF86AudioLowerVolume
+        VolumeUpKey = XF86AudioRaiseVolume
+    }
+}
+
+Plugin {
+    type = tray
+}
+
+Plugin {
+    type = dclock
+    Config {
+        ClockFmt=%a %d %b %R
+        TooltipFmt=%A %x
+        BoldFont=0
+    }
+}

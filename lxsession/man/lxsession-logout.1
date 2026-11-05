@@ -1,0 +1,78 @@
+'\" t
+.\"     Title: lxsession-logout
+.\"    Author: [see the "AUTHORS" section]
+.\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
+.\"      Date: March  2, 2008
+.\"    Manual: General Commands Manual
+.\"    Source: https://lxde.org
+.\"  Language: English
+.\"
+.TH "LXSESSION\-LOGOUT" "1" "March 2, 2008" "https://lxde\&.org" "General Commands Manual"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+lxsession-logout \- log out of LXSession
+.SH "SYNOPSIS"
+.HP \w'\fBlxsession\-logout\fR\ 'u
+\fBlxsession\-logout\fR [\fB\fIOPTIONS\fR\fR...]
+.SH "DESCRIPTION"
+.PP
+\fBlxsession\-logout\fR
+displays a dialog that allows you to log out of your session\&.
+.SH "OPTIONS"
+.PP
+\fB\-b\fR, \fB\-\-banner \fR\fB\fIlogo\fR\fR
+.RS 4
+logo to customize the dialog
+.RE
+.PP
+\fB\-H\fR, \fB\-\-hide\-button\ \&\fR\fB\fIshutdown\fR\fR\fB|\fR\fB\fIreboot\fR\fR\fB|\fR\fB\fIlogout\fR\fR\fB|\fR\fB\fIhibernate\fR\fR\fB|
+.br
+.ti +18
+\fR\fB\fIsuspend\fR\fR\fB|\fR\fB\fIswitch_user\fR\fR\fB|\fR\fB\fIlock_screen\fR\fR
+.RS 4
+button to be hidden from the dialog (can be used repeatedly)
+.RE
+.PP
+\fB\-p\fR, \fB\-\-prompt \fR\fB\fImessage\fR\fR
+.RS 4
+message to customize the dialog
+.RE
+.PP
+\fB\-s\fR, \fB\-\-side \fR\fB\fIleft\fR\fR\fB|\fR\fB\fItop\fR\fR\fB|\fR\fB\fIright\fR\fR\fB|\fR\fB\fIbottom\fR\fR
+.RS 4
+position of the logo
+.RE
+.SH "AUTHORS"
+.PP
+Ying\-Chun Liu
+.PP
+This manual page was written by paulliu
+<grandpaul@gmail\&.com>\&.
+.SH "COPYRIGHT"
+.PP
+\(co 2008 paulliu
+.PP
+Permission is granted to copy, distribute and/or modify this document under the terms of the
+GNU
+General Public License, Version 2 any later version published by the Free Software Foundation\&.
+.SH "SEE ALSO"
+.PP
+\fBlxsession\fR(1)

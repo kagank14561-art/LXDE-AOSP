@@ -1,0 +1,43 @@
+<!-- Header -->
+<header id="header"{% if page.layout == 'landing' %} class="alt"{% endif %}>
+  <h1><a href="{{ site.baseurl }}/">
+    <img src="{{ site.baseurl }}/images/lxde-logo.svg" alt="LXDE logo" width="32" height="32">
+    {{ site.title }}
+  </a></h1>
+  <nav id="nav">
+    <ul>
+      <li class="special">
+        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+        <div id="menu">
+          <ul>
+            <li><a href="{{ site.baseurl }}/">Home</a></li>
+            {% for my_page in site.pages %}
+            {% if my_page.title %}
+            <li><a href="{{ my_page.url | prepend: site.baseurl }}">
+              {% if my_page.short_title %}
+                {{ my_page.short_title }}
+              {% else %}
+                {{ my_page.title }}
+              {% endif %}
+            </a></li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+
+          <ul>
+            <li><a href="https://forum.lxde.org">Forums</a></li>
+            <li><a href="https://wiki.lxde.org">Wiki</a></li>
+            <li><a href="https://blog.lxde.org">Blog</a></li>
+            <li><a href="https://github.com/lxde">GitHub</a></li>
+            <li><a href="https://sourceforge.net/projects/lxde/">SourceForge (inactive)</a></li>
+          </ul>
+
+          <ul>
+            <li><a href="https://lxqt-project.org">LXQt</a></li>
+            <li><a href="https://lubuntu.me">Lubuntu</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>

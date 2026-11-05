@@ -1,0 +1,9 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^git -C /mnt/disk/AOSPDE status --short && git -C /mnt/disk/AOSPDE diff --check && command -v xmllint \\|\\| true && command -v lxpanel \\|\\| true$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "command": true
+    }
+}

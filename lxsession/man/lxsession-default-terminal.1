@@ -1,0 +1,24 @@
+.TH "lxsession-default-terminal" 1
+.SH NAME
+lxsession-default-terminal \- launch default terminal set by LXSession
+.SH SYNOPSIS
+.B lxsession-default-terminal
+.SH DESCRIPTION
+.B lxsession-default-terminal
+is a wrapper around the LXSession D-Bus interface that launches the default
+terminal set by LXsession. It is equivalent to
+.BR lxsession-default\ \&terminal ,
+but it can be used when an application cannot use
+.BR lxsession-default .
+
+The application that will be launched is the one defined for the
+.nh
+.I terminal_manager/command
+.h
+set in the
+.I desktop.conf
+file.
+.SH AUTHORS
+Julien Lavergne <gilir@ubuntu.com>,
+.br
+man page written to conform with Debian

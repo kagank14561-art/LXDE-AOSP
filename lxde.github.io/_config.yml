@@ -1,0 +1,13 @@
+# Welcome to Jekyll!
+#
+
+# Site settings
+title: LXDE
+description: Desktop environment for all
+email: admin@lxde.org
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://lxde.org" # the base hostname & protocol for your site
+permalink: pretty
+markdown: kramdown
+sass:
+  style: compressed

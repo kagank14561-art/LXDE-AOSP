@@ -1,0 +1,22 @@
+.TH "lxsession-edit" 1
+.SH NAME
+lxsession-edit \- GUI session editor for LXDE
+.SH SYNOPSIS
+.B lxsession-edit
+[\fIname\fR]
+.SH DESCRIPTION
+.B lxsession-edit
+is an application that allows changing the list of applications that will run
+when a session starts. The session \fIname\fR can be specified or retrieved
+from environment variables (see below). Otherwise, \fILXDE\fR is the default.
+.SH ENVIRONMENT
+.TP
+.I XDG_CURRENT_DESKTOP
+default variable to get the session name
+.TP
+.I DESKTOP_SESSION
+fallback variable to get the session name
+.SH NOTES
+It follows the Freedesktop.org Autostart Specification.
+.SH AUTHORS
+This manual page is written by Andriy Grytsenko <andrej@rep.kiev.ua>.

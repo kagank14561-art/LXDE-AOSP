@@ -1,0 +1,35 @@
+.TH "lxlock" 1
+.SH NAME
+lxlock \- locking utility for LXDE
+.SH SYNOPSIS
+.B lxlock
+.SH DESCRIPTION
+.B lxlock
+is a simple script that uses third-party applications to lock the session.
+Currently, it uses one of the following applications in this order:
+.IP
+light-locker,
+.br
+xscreensaver,
+.br
+xtrlock,
+.br
+i3lock,
+.br
+slock,
+.br
+xsecurelock,
+.br
+slimlock,
+.br
+xlock.
+.PP
+If an application is unavailable, it tries the next one.
+.SH AUTHORS
+Olivier Fourdan (fourdan@xfce.org)
+
+Julien Lavergne (gilir@ubuntu.com),
+.br
+man page written to conform with Debian
+
+Jarno Suni (8@iki.fi)

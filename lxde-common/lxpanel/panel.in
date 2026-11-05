@@ -1,0 +1,78 @@
+# lxpanel <profile> config file. Manually editing is not recommended.
+# Use preference dialog in lxpanel to adjust config when you can.
+
+Global {
+    edge=bottom
+    align=center
+    margin=12
+    widthtype=percent
+    width=58
+    height=56
+    transparent=1
+    tintcolor=#dce8f4
+    alpha=236
+    setdocktype=1
+    setpartialstrut=1
+    usefontcolor=1
+    fontcolor=#1b1b1f
+    background=0
+}
+
+Plugin {
+    type = menu
+    Config {
+        image=view-grid
+        system {
+        }
+        separator {
+        }
+        item {
+            command=run
+        }
+        separator {
+        }
+        item {
+            image=gnome-logout
+            command=logout
+        }
+    }
+}
+
+Plugin {
+    type = launchbar
+    Config {
+        Button {
+            id=pcmanfm.desktop
+        }
+        Button {
+            id=firefox.desktop
+        }
+        Button {
+            id=lxterminal.desktop
+        }
+    }
+}
+
+Plugin {
+    type = pager
+}
+
+Plugin {
+    type = taskbar
+    expand=1
+    Config {
+        tooltips=1
+        IconsOnly=0
+        AcceptSkipPager=1
+        ShowIconified=1
+        ShowMapped=1
+        ShowAllDesks=0
+        ShowSquareBrackets=0
+        UseMouseWheel=1
+        UseUrgencyHint=1
+        FlatButton=1
+        MaxTaskWidth=160
+        spacing=4
+    }
+}
+

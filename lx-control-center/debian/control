@@ -1,0 +1,44 @@
+Source: lx-control-center
+Section: python
+Priority: extra
+Maintainer: Julien Lavergne <gilir@ubuntu.com>
+Build-Depends: debhelper (>= 9),
+               python-all (>=2.7),
+               python3-all (>=3.2),
+               intltool,
+               dh-python,
+               python-setuptools,
+               python-distutils-extra,
+               python3-setuptools,
+               python3-distutils-extra
+Standards-Version: 3.9.6
+X-Python-Version: >= 2.7
+X-Python3-Version: >= 3.2
+Homepage: 
+
+Package: lx-control-center
+Architecture: all
+Depends: ${misc:Depends},
+         ${python2:Depends}|${python3:Depends},
+         python-lx-control-center|python3-lx-control-center
+Description: Utility to apply settings on LXDE environement
+ The LX-Control-Center centralises all settings for an LXDE environement.
+
+Package: python-lx-control-center
+Architecture: all
+Depends: ${misc:Depends},
+	     ${python2:Depends},
+         python-gtk2 | python-gi,
+         python-psutil
+Description: Utility to apply settings on LXDE environement - python2 package
+ The LX-Control-Center centralise all settings for an LXDE environement.
+
+Package: python3-lx-control-center
+Architecture: all
+Depends: ${misc:Depends},
+         ${python3:Depends},
+         python3-gi,
+         gir1.2-glib-2.0,
+         gir1.2-gtk-3.0
+Description: Utility to apply settings on LXDE environement - python2 package
+ The LX-Control-Center centralise all settings for an LXDE environement.
